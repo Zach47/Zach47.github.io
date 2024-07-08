@@ -1,3 +1,5 @@
+# 基于AHK的快捷键方案
+
 AHK是一个生产力工具。为了能够更好地使用AHK提高生产效率，有必要对热键进行合理的规划。
 
 ## 一、增加新修饰键
@@ -19,14 +21,14 @@ return
 
 ```autohotkey
 ; 可以选择在「重音键」的热键层定义以下基础功能；
-` & r::Reload		;重载脚本。
-` & l::ListVars		;显示所有脚本变量。
-` & k::KeyHistory	;显示按键历史。
+` & r::Reload  ;重载脚本。
+` & l::ListVars  ;显示所有脚本变量。
+` & k::KeyHistory ;显示按键历史。
 
 ; 或者是在「大写键」的热键层进行定义；
-CapsLock & r::Reload		;重载脚本。
-CapsLock & l::ListVars		;显示所有脚本变量。
-CapsLock & k::KeyHistory	;显示按键历史。
+CapsLock & r::Reload  ;重载脚本。
+CapsLock & l::ListVars  ;显示所有脚本变量。
+CapsLock & k::KeyHistory ;显示按键历史。
 
 ; 依次类推。
 ```
@@ -50,4 +52,3 @@ CapsLock & k::KeyHistory	;显示按键历史。
 2. 一个文件夹，存放全局热键的子脚本，比如名为 `global`。
 3. 一个文件夹，存放局部热键的子脚本，比如名为 `local` 。
 4. 一个文件夹，存放AHK库，比如名为 `libs`。
-
